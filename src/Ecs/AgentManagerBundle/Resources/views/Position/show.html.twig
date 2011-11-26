@@ -1,0 +1,37 @@
+<h1>Position</h1>
+
+<table class="record_properties">
+    <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ entity.id }}</td>
+        </tr>
+        <tr>
+            <th>Position_name</th>
+            <td>{{ entity.positionname }}</td>
+        </tr>
+        <tr>
+            <th>Position_default_roles</th>
+            <td>{{ entity.positiondefaultroles }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<ul class="record_actions">
+    <li>
+        <a href="{{ path('agentmanager_empositions') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('agentmanager_empositions_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>
+        <form action="{{ path('agentmanager_empositions_delete', { 'id': entity.id }) }}" method="post">
+            {{ form_widget(delete_form) }}
+            <button type="submit">Delete</button>
+        </form>
+    </li>
+</ul>

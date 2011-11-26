@@ -1,0 +1,30 @@
+agentmanager_empositions:
+    pattern:  /
+    defaults: { _controller: "EcsAgentManagerBundle:Position:index" }
+
+agentmanager_empositions_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "EcsAgentManagerBundle:Position:show" }
+
+agentmanager_empositions_new:
+    pattern:  /new
+    defaults: { _controller: "EcsAgentManagerBundle:Position:new" }
+
+agentmanager_empositions_create:
+    pattern:  /create
+    defaults: { _controller: "EcsAgentManagerBundle:Position:create" }
+    requirements: { _method: post }
+
+agentmanager_empositions_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "EcsAgentManagerBundle:Position:edit" }
+
+agentmanager_empositions_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "EcsAgentManagerBundle:Position:update" }
+    requirements: { _method: post }
+
+agentmanager_empositions_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "EcsAgentManagerBundle:Position:delete" }
+    requirements: { _method: post }
