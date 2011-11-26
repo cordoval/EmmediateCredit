@@ -1,4 +1,19 @@
-<h1>Position edit</h1>
+{% extends '::base.html.twig' %}
+
+{% block title %}Emmediate Credit Solutions{% endblock %}
+
+{% block styles %}
+    {{ parent() }}
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
+
+{% block content %}
+
+
+<h1>Edit Job Title</h1>
 
 <form action="{{ path('agentmanager_empositions_update', { 'id': entity.id }) }}" method="post" {{ form_enctype(edit_form) }}>
     {{ form_widget(edit_form) }}
@@ -20,3 +35,4 @@
         </form>
     </li>
 </ul>
+{% endblock %}

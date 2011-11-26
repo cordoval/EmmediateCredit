@@ -1,4 +1,16 @@
-<h1>Position list</h1>
+{% extends '::base.html.twig' %}
+
+{% block title %}Position list{% endblock %}
+
+{% block styles %}
+    {{ parent() }}
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
+
+{% block content %}
 
 <table class="records_list">
     <thead>
@@ -37,3 +49,4 @@
         </a>
     </li>
 </ul>
+{% endblock %}

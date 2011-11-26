@@ -1,3 +1,18 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}Emmediate Credit Solutions{% endblock %}
+
+{% block styles %}
+    {{ parent() }}
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
+
+{% block content %}
+
+
 <h1>Position creation</h1>
 
 <form action="{{ path('agentmanager_empositions_create') }}" method="post" {{ form_enctype(form) }}>
@@ -14,3 +29,4 @@
         </a>
     </li>
 </ul>
+{% endblock %}
