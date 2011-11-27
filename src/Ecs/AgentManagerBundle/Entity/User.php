@@ -108,10 +108,10 @@ class User extends BaseUser
     protected $notes;
 
 	/**
-	 * @ORM\ManyToOne(targetEntity="Position", inversedBy="users")
-	 * @ORM\JoinColumn(name="position_id", referencedColumnName="id")
+	 * @ORM\ManyToOne(targetEntity="JobTitle", inversedBy="users")
+	 * @ORM\JoinColumn(name="jobTitle_id", referencedColumnName="id")
 	 */
-	protected $position;
+	protected $jobTitle;
 
 
     /**

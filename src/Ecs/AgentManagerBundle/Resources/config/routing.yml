@@ -1,6 +1,6 @@
 EcsAgentManagerBundle_homepage:
     pattern:  /agentmanager
     defaults: { _controller: EcsAgentManagerBundle:Default:index }
-EcsAgentManagerBundle_empositions:
-    resource: "@EcsAgentManagerBundle/Resources/config/routing/position.yml"
-    prefix:   /empositions
+#EcsAgentManagerBundle_empositions:
+#    resource: "@EcsAgentManagerBundle/Resources/config/routing/jobTitle.yml"
+#    prefix:   /emjobTitles
