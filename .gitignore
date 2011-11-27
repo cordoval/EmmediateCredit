@@ -6,3 +6,4 @@ build/
 vendor/
 .idea/*
 app/config/parameters.yml
+app/config/parameters.ini
